@@ -48,6 +48,7 @@ public class LoginGUI extends JFrame {
                 String message = "Successfully!";
                 message += "\nYour login: " + UserField.getText() + "\nYour password: " + PasswordField.getText();
                 JOptionPane.showMessageDialog(null, message, "Message", JOptionPane.INFORMATION_MESSAGE);
+                UserField.setText(null); PasswordField.setText(null);
             }
         }
     }
